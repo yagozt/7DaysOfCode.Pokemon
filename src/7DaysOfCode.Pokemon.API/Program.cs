@@ -1,3 +1,5 @@
+using _7DaysOfCode.Pokemon.External.IntegrationApi;
+
 namespace _7DaysOfCode.Pokemon.API
 {
     public class Program
@@ -12,6 +14,11 @@ namespace _7DaysOfCode.Pokemon.API
             // Learn more about configuring Swagger/OpenAPI at https://aka.ms/aspnetcore/swashbuckle
             builder.Services.AddEndpointsApiExplorer();
             builder.Services.AddSwaggerGen();
+            builder.Services.AddHttpClient("Pokemon", httpClient =>
+            {
+                httpClient.BaseAddress = new Uri("https://pokeapi.co/");
+            });
+            builder.Services.AddTransient<PokemonApiService>();
 
             var app = builder.Build();
 

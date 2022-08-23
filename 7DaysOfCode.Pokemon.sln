@@ -3,7 +3,11 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 17
 VisualStudioVersion = 17.2.32616.157
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "7DaysOfCode.Pokemon.API", "src\7DaysOfCode.Pokemon.API\7DaysOfCode.Pokemon.API.csproj", "{6120E065-522D-4B8A-B314-F4F1DE03EF85}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "7DaysOfCode.Pokemon.API", "src\7DaysOfCode.Pokemon.API\7DaysOfCode.Pokemon.API.csproj", "{6120E065-522D-4B8A-B314-F4F1DE03EF85}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "7DaysOfCode.Pokemon.External", "src\7DaysOfCode.Pokemon.External\7DaysOfCode.Pokemon.External.csproj", "{D8FEED0F-5C7E-44C8-AA91-9ACAC0F65DF8}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "7DaysOfCode.Pokemon.Core", "src\7DaysOfCode.Pokemon.Core\7DaysOfCode.Pokemon.Core.csproj", "{79B32A1D-C01B-4477-8785-22B4EAF3BFFE}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -15,6 +19,14 @@ Global
 		{6120E065-522D-4B8A-B314-F4F1DE03EF85}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{6120E065-522D-4B8A-B314-F4F1DE03EF85}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{6120E065-522D-4B8A-B314-F4F1DE03EF85}.Release|Any CPU.Build.0 = Release|Any CPU
+		{D8FEED0F-5C7E-44C8-AA91-9ACAC0F65DF8}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{D8FEED0F-5C7E-44C8-AA91-9ACAC0F65DF8}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{D8FEED0F-5C7E-44C8-AA91-9ACAC0F65DF8}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{D8FEED0F-5C7E-44C8-AA91-9ACAC0F65DF8}.Release|Any CPU.Build.0 = Release|Any CPU
+		{79B32A1D-C01B-4477-8785-22B4EAF3BFFE}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{79B32A1D-C01B-4477-8785-22B4EAF3BFFE}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{79B32A1D-C01B-4477-8785-22B4EAF3BFFE}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{79B32A1D-C01B-4477-8785-22B4EAF3BFFE}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

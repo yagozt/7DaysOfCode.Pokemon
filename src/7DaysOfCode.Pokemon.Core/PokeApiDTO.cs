@@ -1,4 +1,4 @@
-﻿namespace _7DaysOfCode.Pokemon.API.Controllers
+﻿namespace _7DaysOfCode.Pokemon.Core
 {
     public class PokeApiDTO
     {

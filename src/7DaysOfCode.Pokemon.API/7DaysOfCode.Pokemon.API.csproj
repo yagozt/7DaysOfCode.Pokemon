@@ -14,4 +14,9 @@
     <PackageReference Include="Swashbuckle.AspNetCore" Version="6.2.3" />
   </ItemGroup>
 
+  <ItemGroup>
+    <ProjectReference Include="..\7DaysOfCode.Pokemon.Core\7DaysOfCode.Pokemon.Core.csproj" />
+    <ProjectReference Include="..\7DaysOfCode.Pokemon.External\7DaysOfCode.Pokemon.External.csproj" />
+  </ItemGroup>
+
 </Project>
