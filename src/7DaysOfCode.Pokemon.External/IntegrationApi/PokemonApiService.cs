@@ -30,5 +30,26 @@ namespace _7DaysOfCode.Pokemon.External.IntegrationApi
 
             return new PokeApiDTO();
         }
+
+        public async Task<PokemonDetailDTO> GetPokemon(int id, CancellationToken cancellationToken)
+        {
+            var httpRequestMessage = new HttpRequestMessage(HttpMethod.Get, $"api/v2/pokemon/{id}");
+
+            var httpClient = _httpClientFactory.CreateClient("Pokemon");
+            var httpResponseMessage = await httpClient.SendAsync(httpRequestMessage, cancellationToken);
+
+            if (httpResponseMessage.IsSuccessStatusCode)
+            {
+                using var contentStream =
+                    await httpResponseMessage.Content.ReadAsStreamAsync(cancellationToken);
+
+                var jsonResult = await JsonSerializer.DeserializeAsync
+                    <PokemonDetailDTO>(contentStream, jsonSerializerOptions, cancellationToken: cancellationToken);
+
+                return jsonResult ?? new PokemonDetailDTO();
+            }
+
+            return new PokemonDetailDTO();
+        }
     }
 }
